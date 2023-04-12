@@ -18,5 +18,8 @@ export default function App() {
     codeUrl     : `${bd.dirName}/${bd.buildName}.wasm${bd.exp}`,
   });
 
-  return <Unity unityProvider={unityProvider} style={ { width: 1920, height: 1080 } }/>;
+  return <div className="UnityOuter">
+    <Unity className="UnityInner"
+      unityProvider={unityProvider}/> 
+  </div>
 }
