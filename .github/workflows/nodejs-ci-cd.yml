@@ -20,10 +20,10 @@ jobs:
 
     - name: Git Pull
       run: |
-        cd ${{ GIT_DIR }}
+        cd ${{ env.GIT_DIR }}
         git pull
 
     - name: NPM Install
       run: |
-        cd ${{ GIT_DIR }}
+        cd ${{ env.GIT_DIR }}
         npm install
