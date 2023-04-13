@@ -18,10 +18,10 @@ jobs:
 
     - name: Git Pull
       run: |
-        cd /~/react-for-unity-webgl-test
+        cd ~/react-for-unity-webgl-test
         git pull
 
     - name: NPM Install
       run: |
-        cd /~/react-for-unity-webgl-test
+        cd ~/react-for-unity-webgl-test
         npm install
