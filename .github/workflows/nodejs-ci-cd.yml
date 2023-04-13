@@ -8,6 +8,8 @@ on:
 
 jobs:
   build:
+    env:
+      GIT_DIR: '~/react-for-unity-webgl-test'
 
     runs-on: self-hosted
     timeout-minutes: 5
@@ -18,10 +20,10 @@ jobs:
 
     - name: Git Pull
       run: |
-        cd ~/react-for-unity-webgl-test
+        cd ${{ GIT_DIR }}
         git pull
 
     - name: NPM Install
       run: |
-        cd ~/react-for-unity-webgl-test
+        cd ${{ GIT_DIR }}
         npm install
