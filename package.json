@@ -4,6 +4,9 @@
   "scripts": {
     "init" : "cd web && npm install",
     "start": "cd web && npm start",
-    "build": "cd web && npm build"
+    "build": "cd web && npm run build",
+    "docker-up": "docker compose -p react-webgl up -d",
+    "docker-down": "docker compose -p react-webgl down --rmi all",
+    "docker-restart": "npm run docker-down && npm run docker-up"
   }
 }
