@@ -6,7 +6,7 @@ export default function App() {
   const buildDir1 = {
     exp      : ".unityweb",
     dirName  : "Build",
-    buildName: "Builds_WebGL-Room_Customizer_v0.31"
+    buildName: "Builds_WebGL-Room_Customizer_v0.32"
   };
 
   const bd = buildDir1;
