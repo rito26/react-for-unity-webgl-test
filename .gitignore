@@ -25,3 +25,5 @@ yarn-error.log*
 # 
 nohup.out
 actions-runner
+
+public/Build-Japan

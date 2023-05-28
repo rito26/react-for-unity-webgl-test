@@ -9,7 +9,13 @@ export default function App() {
     buildName: "Builds_WebGL-Room_Customizer_v0.31"
   };
 
-  const bd = buildDir1;
+  const buildDir_Japan = {
+    exp      : "",
+    dirName  : "Build-Japan",
+    buildName: "JapanCity2"
+  };
+
+  const bd = buildDir_Japan;
 
   const { unityProvider } = useUnityContext({
     loaderUrl   : `${bd.dirName}/${bd.buildName}.loader.js`,
