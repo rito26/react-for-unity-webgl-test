@@ -21,13 +21,21 @@ export default function App() {
     buildName: "MultiTouch"
   };
 
-  const bd = buildDir_MultiTouch;
+  // 어드레서블
+  const buildDir_Ham = {
+    exp      : ".unityweb",
+    dirName  : "Build-Ham",
+    buildName: "Ham"
+  };
+
+  const bd = buildDir_Ham;
 
   const { unityProvider } = useUnityContext({
     loaderUrl   : `${bd.dirName}/${bd.buildName}.loader.js`,
     dataUrl     : `${bd.dirName}/${bd.buildName}.data${bd.exp}`,
     frameworkUrl: `${bd.dirName}/${bd.buildName}.framework.js${bd.exp}`,
     codeUrl     : `${bd.dirName}/${bd.buildName}.wasm${bd.exp}`,
+    streamingAssetsUrl: `${bd.dirName}/StreamingAssets`,
   });
 
   return <div className="UnityOuter">
