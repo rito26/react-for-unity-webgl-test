@@ -15,7 +15,13 @@ export default function App() {
     buildName: "JapanCity2"
   };
 
-  const bd = buildDir_Japan;
+  const buildDir_MultiTouch = {
+    exp      : ".unityweb",
+    dirName  : "Build-MultiTouch",
+    buildName: "MultiTouch"
+  };
+
+  const bd = buildDir_MultiTouch;
 
   const { unityProvider } = useUnityContext({
     loaderUrl   : `${bd.dirName}/${bd.buildName}.loader.js`,
