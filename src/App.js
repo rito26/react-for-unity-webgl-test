@@ -21,6 +21,12 @@ export default function App() {
     buildName: "MultiTouch"
   };
 
+  const buildDir_InputFieldTest = {
+    exp      : ".unityweb",
+    dirName  : "Build-InputFieldTest",
+    buildName: "InputFieldTest"
+  };
+
   // 어드레서블
   const buildDir_Ham = {
     exp      : ".unityweb",
@@ -28,7 +34,7 @@ export default function App() {
     buildName: "Ham"
   };
 
-  const bd = buildDir_Ham;
+  const bd = buildDir_InputFieldTest;
 
   const { unityProvider } = useUnityContext({
     loaderUrl   : `${bd.dirName}/${bd.buildName}.loader.js`,
